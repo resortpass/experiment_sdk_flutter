@@ -12,7 +12,7 @@ class LocalStorage {
   Map<String, ExperimentVariant> map = {};
 
   LocalStorage({required String apiKey}) : namespace = _getNamespace(apiKey) {
-    SharedPreferences.setPrefix(namespace);
+    //SharedPreferences.setPrefix(namespace);
   }
 
   void put(String key, ExperimentVariant value) {
